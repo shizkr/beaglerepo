@@ -2,10 +2,12 @@
 <manifest>
   <remote  name="knl"
            fetch="git://git.kernel.org/" />
-
+  <remote  name="uboot"
+           fetch="git://git.denx.de/" />
   <default revision="master"
            remote="knl" />
 
+  <project path="kernel/common" name="u-boot" remote="uboot" />
   <project path="kernel/common"
      name="pub/scm/linux/kernel/git/tmlind/linux-omap-2.6" remote="knl">
   </project>
