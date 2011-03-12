@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="korg"
-           fetch="git://android.git.kernel.org/"
-           review="review.source.android.com" />
-  <default revision="master"
-           remote="korg" />
+  <remote  name="knl"
+           fetch="git://git.kernel.org/" />
 
-  <project path="build" name="platform/build">
-    <copyfile src="core/root.mk" dest="Makefile" />
+  <default revision="master"
+           remote="knl" />
+
+  <project path="kernel/common"
+     name="pub/scm/linux/kernel/git/tmlind/linux-omap-2.6" remote="knl">
+
   </project>
 </manifest>
