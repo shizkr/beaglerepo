@@ -4,11 +4,13 @@
            fetch="git://git.kernel.org/" />
   <remote  name="uboot"
            fetch="git://git.denx.de/" />
+  <remote  name="xloader"
+           fetch="git://gitorious.org/" />
   <default revision="master"
            remote="knl" />
 
+  <project path="xloader" name="x-load-omap3/mainline" remote="xloader" />
   <project path="kernel/common" name="u-boot" remote="uboot" />
   <project path="kernel/common"
-     name="pub/scm/linux/kernel/git/tmlind/linux-omap-2.6" remote="knl">
-  </project>
+     name="pub/scm/linux/kernel/git/tmlind/linux-omap-2.6" remote="knl" />
 </manifest>
