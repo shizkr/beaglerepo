@@ -10,7 +10,7 @@
 
   <project path="kernel/common"
      name="pub/scm/linux/kernel/git/tmlind/linux-omap-2.6" remote="knl">
-  <project path="kernel/common" name="u-boot" remote="uboot">
-
+  <project path="kernel/common" 
+     name="u-boot" remote="uboot">
   </project>
 </manifest>
