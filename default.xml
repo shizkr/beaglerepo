@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="knl"
-           fetch="git://git.kernel.org/" />
+           fetch="git://gitorious.org/" />
   <remote  name="uboot"
            fetch="git://git.denx.de/" />
   <remote  name="xloader"
            fetch="git://gitorious.org/" />
+  <remote  name="github"
+           fetch="git://github.com/" />
   <default revision="master"
-           remote="knl" />
+           remote="github" />
 
   <project path="kernel/common"
-     name="pub/scm/linux/kernel/git/tmlind/linux-omap-2.6" remote="knl" />
+     name="beagleboard-validation/linux" remote="knl" />
   <project path="uboot" name="u-boot" remote="uboot" />
   <project path="xloader" name="x-load-omap3/mainline" remote="xloader" />
+  <project path="document" name="shizkr/beagledocument" remote="github" />
+  <project path="build" name="shizkr/beaglebuild" remote="github" />
 </manifest>
