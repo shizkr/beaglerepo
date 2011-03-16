@@ -13,6 +13,8 @@
 
   <project path="kernel/common"
      name="beagleboard-validation/linux" remote="knl" revision="beagleboardXM" />
+  <project path="kernel/modules"
+     name="shizkr/beaglekernelmodules" remote="github" />
   <project path="uboot" name="u-boot" remote="uboot" />
   <project path="xloader" name="x-load-omap3/mainline" remote="xloader" />
   <project path="document" name="shizkr/beagledocument" remote="github" />
